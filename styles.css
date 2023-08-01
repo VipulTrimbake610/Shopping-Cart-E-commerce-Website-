@@ -1,0 +1,112 @@
+/* Write styles here */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    /* color: white; */
+}
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+  
+    background-color: black;
+    border-bottom: 1px solid white;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  
+  nav .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav .nav-items a {
+    margin: 0 1rem;
+    padding-bottom: 5px;
+    transition-property: all;
+    transition-duration: 0.2s;
+  }
+  nav .nav-items a:hover{
+    font-weight: bold;
+    border-bottom: 2px solid white;
+  } 
+
+main{
+    /* border: 1px solid red; */
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    /* justify-content: end;
+    align-items: end; */
+    padding-bottom: 20px;
+    padding-right: 20px;
+
+}
+main section{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 60px;
+}
+section .title{
+    font-size: 40px;
+    
+}
+section .desc{
+    font-size: 20px;
+}
+section .btns{
+    display: flex;
+    column-gap: 25px;
+}
+main img{
+    width: 800px;
+    height: 420px;
+    align-self: end;
+    justify-self: end;
+    position: relative;
+    bottom: 115px;
+    right: 140px;
+}
+button {
+    width: 130px;
+    height: 34px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition-property:all;
+    transition-duration: 1s;
+
+}
+button:hover{
+  background-color: white;
+  color: black;
+}
+#btnSignup{
+    background-color: white;
+    color: black;
+}
+#btnSignup:hover{
+  background-color: black;
+  color: white;
+}
